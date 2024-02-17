@@ -1,0 +1,33 @@
+* {font-family: sans-serif;}
+
+body {
+    margin:3px;
+}
+
+#canvas, #vid {
+    height: 230px;
+    width: auto;
+}
+
+#images > img {
+    height: 70px;
+    width: auto;
+}
+
+#images {
+    height: 70px;
+    width: 98vw;
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+#ffmsg {
+    width: 97vw;
+    height: calc(100vh - 405px);
+    text-wrap: wrap;
+    overflow: hidden;
+    font-family: monospace;
+    margin: 7px;
+}

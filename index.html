@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <input type="file" id="imgs" multiple="true" accept="image/*">
+    <progress id="progress" value="0" min="0" style="width: 300px"></progress>
+    <br>
+
+    Width: <input type="number" id="w" value="1000"> 
+    Height: <input type="number" id="h" value="750"> 
+    FPS: <input type="number" id="fps" value="25">
+    <button id="gen-btn">Generate</button>
+    <br>
+    <hr>
+
+    <canvas id="canvas" width="1000" height="750"></canvas>
+    <video id="vid" width="1000" height="750" controls autoplay loop></video>
+    <br>
+
+    Status: <span id="status">Idle</span>
+    <a style="display:none" id="download" download="download.mp4">Download MP4</a>
+    <pre id="ffmsg"></pre>
+    
+    <div id="images"></div>
+    <script src="main.js"></script>
+</body>
+</html>
